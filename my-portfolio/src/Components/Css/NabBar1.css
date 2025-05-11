@@ -1,0 +1,113 @@
+.navigation-bar1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+.nav-bar1{
+    color:  white;
+    width: 50px;
+    border-radius: 10px;
+    background-color: rgba(78, 75, 75, 0.74);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow:
+    0 0 5px rgb(171, 30, 252),
+    0 0 10px rgb(171, 30, 252),
+    0 0 20px rgb(171, 30, 252),
+    0 0 40px rgb(171, 30, 252);
+}
+.nav-bar-icons{
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: visible;
+  justify-content: center;
+  align-items:center;
+  cursor: pointer;
+  border-radius: 8px; /* slight rounding */
+}
+
+.icon-label {
+  font-size: 12px;
+  color: #333;
+  opacity: 0; /* hidden initially */
+  transform: translateY(-5px); /* moved up initially */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  margin-top: 6px; /* space between icon and label */
+  position: relative;
+
+
+}
+.nav-bar-icons {
+  font-size: 24px;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+/* Background square animation */
+.icon-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  background-color: rgb(119, 12, 161);
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.icon-wrapper:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.icon-wrapper:hover .nav-bar-icons .icon-label{
+  color: white;
+}
+
+.icon-wrapper:hover .icon-label {
+  opacity: 1; /* make it visible */
+  transform: translateY(0); /* slide it down */
+  color: white;
+  margin-top: 60px;
+}
+
+.icon-wrapper.active::before {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(153, 0, 255);
+  box-shadow: 0 0 10px rgb(153, 0, 255), 0 0 20px rgb(153, 0, 255);
+  transition: all 0.4s ease;
+}
+
+.icon-wrapper.active .nav-bar-icons {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/*  */
