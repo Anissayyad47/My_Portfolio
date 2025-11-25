@@ -32,6 +32,7 @@
     width: 320px;
     background-color: rgba(78, 75, 75, 0.74);
     margin-top: 20px;
+    transition: 0.3s;
 }
 .project-contaner:hover{
     border: 2px solid rgb(176, 6, 199);
@@ -87,4 +88,15 @@
 }
 .skill-icons{
     padding: 10px;
+}
+.live-demo{
+    background-color: rgb(2, 179, 25);
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 10px;
+    /* margin-left: 12px; */
+    width: 98%;
+    cursor: pointer;
 }

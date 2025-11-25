@@ -17,6 +17,8 @@ import java from '../assets/java.png'
 import csharp from '../assets/csharp.png'
 import gpt from '../assets/GPT.jpg'
 import aws from '../assets/aws1.png'
+import docker from '../assets/docker.png'
+import springBoot from '../assets/springBoot.webp'
 
 
 
@@ -32,6 +34,22 @@ export default function Skills_Section() {
 
                         <div className='skills'>
                             <div className='skills-left'>
+                                <div className='skills-set'>
+                                        {/* <FaJava className='skills-icon' size={40}></FaJava> */}
+                                        <img src={java} alt="" width={60} className='skills-icon' />
+                                        <div className='skills-title'>
+                                            <h2>Java</h2>
+                                            <h4>OOP Language</h4>
+                                        </div>
+                                </div>
+                                <div className='skills-set'>
+                                        {/* <SiMysql className='skills-icon' size={40} style={{color:'blue'}}></SiMysql> */}
+                                        <img src={sql} alt="" width={60} className='skills-icon' />
+                                        <div className='skills-title'>
+                                            <h2>MySql</h2>
+                                            <h4>SQL Database</h4>
+                                        </div>
+                                </div>
                                 <div className='skills-set'>
                                     <img src={react} alt="" width={60} className='skills-icon' style={{backgroundColor:'rgb(37, 34, 34)'}}/>
                                     {/* <RiReactjsFill className='skills-icon ' size={40} style={{color:'blue'}}></RiReactjsFill> */}
@@ -54,16 +72,25 @@ export default function Skills_Section() {
                                         <h4>NoSQL Database</h4>
                                     </div>
                             </div>
-                            <div className='skills-set'>
-                                    {/* <FaJava className='skills-icon' size={40}></FaJava> */}
-                                    <img src={java} alt="" width={60} className='skills-icon' />
-                                    <div className='skills-title'>
-                                        <h2>Java</h2>
-                                        <h4>OOP Language</h4>
-                                    </div>
-                            </div>
+
                             </div>
                             <div className='skills-right'>
+                            <div className='skills-set'>
+                                    <img src={springBoot} alt="" width={60} className='skills-icon'/>
+                                    {/* <SiRedux className='skills-icon' size={40}></SiRedux> */}
+                                    <div className='skills-title'>
+                                        <h2>Spring Boot</h2>
+                                        <h4>Backend Framework</h4>
+                                    </div>
+                            </div>
+                            <div className='skills-set'>
+                                    <img src={docker} alt="" width={60} className='skills-icon'/>
+                                    {/* <SiRedux className='skills-icon' size={40}></SiRedux> */}
+                                    <div className='skills-title'>
+                                        <h2>Docker</h2>
+                                        <h4>Containerization Platform</h4>
+                                    </div>
+                            </div>
                             <div className='skills-set'>
                                     <img src={redux} alt="" width={60} className='skills-icon'/>
                                     {/* <SiRedux className='skills-icon' size={40}></SiRedux> */}
@@ -72,6 +99,7 @@ export default function Skills_Section() {
                                         <h4>State Manager</h4>
                                     </div>
                             </div>
+
                             <div className='skills-set'>
                                     <SiExpress className='skills-icon' size={40} style={{backgroundColor:'black', color:'white'}}></SiExpress>
                                     <div className='skills-title'>
@@ -79,14 +107,7 @@ export default function Skills_Section() {
                                         <h4>Web Framework</h4>
                                     </div>
                             </div>
-                            <div className='skills-set'>
-                                    {/* <SiMysql className='skills-icon' size={40} style={{color:'blue'}}></SiMysql> */}
-                                    <img src={sql} alt="" width={60} className='skills-icon' />
-                                    <div className='skills-title'>
-                                        <h2>MySql</h2>
-                                        <h4>SQL Database</h4>
-                                    </div>
-                            </div>
+
                             <div className='skills-set'>
                                     {/* <SiMysql className='skills-icon' size={40}></SiMysql> */}
                                     <img src={csharp} alt="" width={60} className='skills-icon' />

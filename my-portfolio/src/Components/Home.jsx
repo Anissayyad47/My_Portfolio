@@ -1,5 +1,7 @@
 import './Css/Home.css'
 import imageMe from '../assets/me.JPG'
+import my_image1 from '../assets/my_image1.png'
+import my_image2 from '../assets/my_image2.png'
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
@@ -11,6 +13,7 @@ import Certification_Section from './Certification_Section';
 import NavBar from './NavBar';
 import Marquee from './Marquee';
 import NavBar1 from './NavBar1';
+import ContactForm from './ContactForm';
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import Footer from './Footer';
 import { FaEnvelope } from 'react-icons/fa';
@@ -74,7 +77,7 @@ export default function Home(){
                 <div className="left-section">
                     <div className='left-section-in'>
                         <div className='my-image'>
-                            <img src={imageMe} width={220} className='myimage'></img>
+                            <img src={my_image2}  className='myimage'></img>
                         </div>
                         <div className='my-details'>
                             <h1>Anis Sayyad</h1>
@@ -110,8 +113,12 @@ export default function Home(){
                             </h2>
                     </div>
                     <div className='heading2'>
-                        <h4>I'm Anis Sayyad, a Full Stack Developer currently pursuing a BE in Computer Science and Engineering. I specialize in JavaScript, React, Node.js, Express.js, and MongoDB.
-I've built several projects using these technologies, gaining practical experience in both frontend and backend development. I'm now looking for opportunities to grow and contribute as a developer.</h4>
+                        <h4>A recent B.E. Computer Science Engineering graduate (2025) skilled in MERN stack and Java Spring Boot backend development.
+I specialize in building scalable applications with clean UI, secure REST APIs, cloud storage, and production-ready deployments.</h4>
+<br></br>
+<h4>I’ve built and deployed multiple real-world projects using React.js, Node.js, Spring Boot, PostgreSQL, MongoDB, AWS S3, Redis, Elasticsearch, Docker, and CI/CD pipelines.</h4>
+<br></br>
+<h4>I enjoy solving real problems with efficient system design and working across frontend, backend, and cloud environments.</h4>
                     </div>
 
                     <div className='education'>
@@ -121,7 +128,7 @@ I've built several projects using these technologies, gaining practical experien
 
                     <div className='lets-talk'>
                         <button className='lets-talk-button' onClick={()=> scrollToSection("contact")}>Let's Talk</button>
-                        <a href="Anis_Resume.pdf" download><button className="resume-download"><span>Resume</span></button></a>
+                        <a href="Anis_Sayyad_7447726713.pdf" download><button className="resume-download"><span>Resume</span></button></a>
                     </div>
                     <div className='text-opportunities'>
                         <h3>I'm currently looking for full-time opportunities. If you'd like to get in touch, feel free to reach out. I’d be happy to connect with you!</h3>
@@ -169,7 +176,13 @@ I've built several projects using these technologies, gaining practical experien
                             </a>
                         </div>
                     </div>
+                    
                     </section>
+                    <div className='Contact-form'>
+                        <ContactForm></ContactForm>
+                    </div>
+                     
+                    
                 </div>
                 </div>
             </div>
